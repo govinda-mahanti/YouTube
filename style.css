@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -9,7 +8,7 @@
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 
-    
+
 }
 
 .containor {
@@ -69,13 +68,14 @@
     background-color: #222222;
     border-radius: 20px;
 }
+
 .rightnav {
     display: flex;
     gap: 20px;
 
 }
 
-.rightnav img:nth-child(3) {
+.rightnav img:nth-child(5) {
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -111,18 +111,23 @@
     padding: 10px 10px;
     text-decoration: none;
     border-radius: 20px;
-    width: 25%;
+    width: 180px;
     border: none;
     font-size: 14px;
     font-weight: 500;
     color: black;
     background-color: #3EA6FF;
 }
+.ytdesc{
+    width: 550px;
+}
 
 .ytpremiumdetails p:nth-child(2) {
     font-size: 25px;
     font-weight: 300;
+    width: 750px;
 }
+
 .ytpremiumdetails p:nth-child(3) {
     font-size: 15px;
     font-weight: 400;
@@ -136,7 +141,6 @@
 .ytpremiumdetails p:nth-child(4) {
     color: #76A6FF;
     font-weight: 400;
-
 }
 
 .feature {
@@ -153,7 +157,7 @@
 .feature div:nth-child(1),
 .feature div:nth-child(2),
 .feature div:nth-child(3) {
-    width: 22%;
+    width: 294px;
     height: 62%;
     display: flex;
     flex-direction: column;
@@ -171,6 +175,7 @@
     font-size: 15px;
     line-height: 20px;
 }
+
 .feature div:nth-child(1)>h1,
 .feature div:nth-child(2)>h1,
 .feature div:nth-child(3)>h1 {
@@ -195,12 +200,13 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 155px 0 0 750px;
+    padding: 15% 0 0 50%;
 }
 
 .bg1>div>p {
-    font-weight: 400;
     font-size: 20px;
+    font-weight: 300;
+    width: 65%;
     line-height: 30px;
     color: rgb(229, 229, 229);
 
@@ -224,11 +230,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 155px 0 0 250px;
+    padding: 15% 0 0 17%;
 }
 
 .bg2>div>p {
-    font-weight: 400;
+    font-weight: 300;
+    width: 40%;
     font-size: 20px;
     line-height: 30px;
     color: rgb(229, 229, 229);
@@ -253,11 +260,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 155px 0 0 750px;
+    padding: 15% 0 0 50%;
 }
 
 .bg3>div>p {
-    font-weight: 400;
+    font-weight: 300;
+    width: 65%;
     font-size: 20px;
     line-height: 30px;
     color: rgb(229, 229, 229);
@@ -282,11 +290,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding: 155px 0 0 250px;
+    padding: 15% 0 0 17%;
 }
 
 .bg4>div>p {
-    font-weight: 400;
+    font-weight: 300;
+    width: 40%;
     font-size: 20px;
     line-height: 30px;
     color: rgb(229, 229, 229);
@@ -334,10 +343,13 @@
 hr {
     opacity: 0.2;
 }
+.helpcenter{
+    width: 50%;
+}
+
 .helpcenter>p {
     font-size: 17px;
     font-weight: 300;
-    padding-right: 380px;
     padding-top: 80px;
 }
 
@@ -353,35 +365,298 @@ iPads, Tablets – 481px — 768px.
 Small screens, laptops – 769px — 1024px.
 Desktops, large screens – 1025px — 1200px.
 Extra large screens, TV – 1201px, and more. */
-
-@media screen and (max-width:480px){
-    .faqs {        
+@media screen and (max-width:480px) {
+    .faqs {
         height: 92%;
     }
     .helpcenter>p {
         padding-right: 0px;
         padding-top: 80px;
-        width: 50%;
         margin: auto;
     }
-    .helpcenter{
+    .helpcenter {
         display: flex;
         flex-direction: column;
         width: 50%;
         margin-left: 0px;
-        
+    }
+    .drop>p {
+        font-size: 18px;
+        font-weight: 400;
+        width: 170px;
+    }
+    .bg4,
+    .bg3,
+    .bg2,
+    .bg1 {
+        height: 29%;
+        width: 100%;
+        background-size: cover;
+    }
+    .bg4>div>h2,
+    .bg3>div>h2,
+    .bg2>div>h2,
+    .bg1>div>h2 {
+        color: white;
+        font-size: 29px;
+        font-weight: 300;
+    }
+    .bg4>div>p,
+    .bg3>div>p,
+    .bg2>div>p,
+    .bg1>div>p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        width: 90%;
+        text-align: justify;
+        color: rgb(229, 229, 229);
+    }
+    .bg4>div,
+    .bg3>div,
+    .bg2>div,
+    .bg1>div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 100px 0 0 25px;
+    }
+    .feature {
+        display: flex;
+        flex-direction: column;
+        height: 120%;
+        gap: 10px;
+    }
+    .feature div:nth-child(1),
+    .feature div:nth-child(2),
+    .feature div:nth-child(3) {
+        width: 80%;
+        height: 30%;
+        justify-content: center;
+    }
+    .ytpremium {
+        height: 91%;
+        gap: 50px;
+    }
+    .ytpremiumlogo>img{
+        width: 100%;
+    }
+    .ytpremiumlogo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10%;
+    }
+    .ytdesc{
+        width: 100%;
+    }
+    
+    .ytpremiumdetails p:nth-child(2) {
+        width: 100%;
+    }
+    .centernav{
+        display: none;
+    }
+    .rightnav img:nth-child(2),.rightnav img:nth-child(4){
+        display: none;
     }
 
 }
-@media screen (min-width:481px) and (max-width:768px){
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    .faqs {
+        height: 92%;
+    }
+
+    .helpcenter>p {
+        width: 73%;
+        padding-right: 0px;
+        padding-top: 80px;
+    }
+    .helpcenter {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 0px;
+    }
+    .drop>p {
+        font-size: 18px;
+        font-weight: 400;
+        width: 170px;
+    }
+    .bg4,
+    .bg3,
+    .bg2,
+    .bg1 {
+        height: 33%;
+        width: 100%;
+        background-size: cover;
+    }
+    .bg4>div>h2,
+    .bg3>div>h2,
+    .bg2>div>h2,
+    .bg1>div>h2 {
+        color: white;
+        font-size: 29px;
+        font-weight: 300;
+    }
+    .bg4>div>p,
+    .bg3>div>p,
+    .bg2>div>p,
+    .bg1>div>p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        width: 90%;
+        text-align: justify;
+        color: rgb(229, 229, 229);
+    }
+    .bg4>div,
+    .bg3>div,
+    .bg2>div,
+    .bg1>div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 100px 0 0 25px;
+    }
+    .feature {
+        display: flex;
+        flex-direction: column;
+        height: 120%;
+        gap: 10px;
+    }
+    .feature div:nth-child(1),
+    .feature div:nth-child(2),
+    .feature div:nth-child(3) {
+        width: 50%;
+        height: 30%;
+        justify-content: center;
+    }
+    .ytpremium {
+        height: 75%;
+        gap: 50px;
+    }
+    .ytpremiumlogo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .centernav{
+        display: none;
+    }
+    .ytdesc{
+        width: 100%;
+    }
+    
+    .ytpremiumdetails p:nth-child(2) {
+        width: 100%;
+    }
+   
 
 }
-@media screen (min-width:769px) and (max-width:1024px){
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    .faqs {
+        height: 77%;
+    }
+    .helpcenter>p {
+        width: 60%;
+        padding-right: 0px;
+    }
+    .bg4,
+    .bg3,
+    .bg2,
+    .bg1 {
+        height: 45%;
+        width: 100%;
+        background-size: cover;
+    }
+    .bg4>div>h2,
+    .bg3>div>h2,
+    .bg2>div>h2,
+    .bg1>div>h2 {
+        color: white;
+        font-size: 29px;
+        font-weight: 300;
+    }
+    .bg4>div>p,
+    .bg3>div>p,
+    .bg2>div>p,
+    .bg1>div>p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        width: 48%;
+        color: rgb(229, 229, 229);
+    }
+    .bg4>div,
+    .bg3>div,
+    .bg2>div,
+    .bg1>div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 150px 0 0 25px;
+    }
+    .bg3>div>p,
+    .bg1>div>p {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        width: 48%;
+        color: rgb(229, 229, 229);
+        margin-left: 400px;
+    }
+    .bg3>div>h2,
+    .bg1>div>h2 {
+        color: white;
+        font-size: 29px;
+        font-weight: 300;
+        margin-left: 400px;
+    }
+    .feature {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 90%;
+        gap: 10px;
+    }
+    .feature div:nth-child(1),
+    .feature div:nth-child(2),
+    .feature div:nth-child(3) {
+        width: 40%;
+        height: 35%;
+        margin: auto;
+        justify-content: center;
+    }
+    .ytpremium {
+        height: 75%;
+        gap: 50px;
+    }
+    .ytpremiumlogo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    
+    .centernav{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1025px) and (max-width:1200px) {
+    .rightnav img:nth-child(1),.rightnav img:nth-child(2){
+        display: none;
+    }
 
 }
-@media screen (min-width:1025px) and (max-width:1200px){
 
-}
-@media screen (min-width:1201px){
+@media screen and (min-width:1201px) {
+    .rightnav img:nth-child(1),.rightnav img:nth-child(2){
+        display: none;
+    }
 
 }
