@@ -158,7 +158,7 @@
 .feature div:nth-child(2),
 .feature div:nth-child(3) {
     width: 294px;
-    height: 62%;
+    height: 67%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
